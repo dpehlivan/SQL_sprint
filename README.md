@@ -15,4 +15,4 @@ This repository is meant as a documental folder containing SQL functions as well
 - Python with pandas
 - Streamlit (UI purposes)
 
-## this repo is a work in progress and a notebook mainly.
+this repo is a work in progress and a notebook mainly.
