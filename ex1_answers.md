@@ -46,4 +46,16 @@ ORDER BY positions_gained DESC;
 
 --ok this example sounded shit at first to me too, but its the same thing, just to show you that you can use math in SELECT. I hope i explained the excersise in the other file clear enough, if not sorry, i tried.
 
+6. 
+SELECT driver_id, points, CASE 
+WHEN points >= 200 THEN 'competition'
+WHEN points BETWEEN 150 AND 199 THEN 'middle'
+ELSE 'loss'
+END AS tier
+FROM driver_standings;
 
+7. 
+SELECT d.last_name, r.grid_position, r.final_position
+FROM drivers d
+INNER JOIN race_results r ON d.driver_id = r.driver_id
+WHERE r.grid_position < r.final_position;

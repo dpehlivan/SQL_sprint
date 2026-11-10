@@ -12,3 +12,10 @@ HARDER EXAMPLE:
 
 5. find the first, last names and the differences between grid_position and final_position. (if they started 10th and finished 5th, the difference is 5 positions) - math is allowed in SELECT
 
+EXERCISE WITH CASE
+
+6. use driver_standings and try to write code to show the driver_id and their points. use case to create a column "tier". if the points are bigger or equal to 200 call them "competition", if the points are between 150 and 199, call them "middle", label the rest as "loss".
+
+INNER JOIN
+
+7. combine drivers and race_results and show last_name, grid_position, final_position. only return results where grid position (lower) was better than final position (position loss).
